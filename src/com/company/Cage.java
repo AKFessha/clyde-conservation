@@ -11,8 +11,20 @@ public class Cage {
     private LinkedList<Animal> cagedAnimals;
     private LinkedList<Keeper> cagedKeepers;
 
+    // Constructors
+    public Cage(){
 
-    //Getters and Setters
+    }
+    public Cage(String cageID, String cageSize, String cageType, int maxAnimal, int maxKeepers) {
+        this.cageID = cageID;
+        this.cageSize = cageSize;
+        this.cageType = cageType;
+        this.maxAnimal = maxAnimal;
+        this.maxKeepers = maxKeepers;
+    }
+
+
+    // Getters and Setters
 
     public String getCageID() {
         return cageID;
