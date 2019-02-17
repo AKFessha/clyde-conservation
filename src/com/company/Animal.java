@@ -7,6 +7,20 @@ public class Animal {
     private String animalSpecies;
     private String cageAssignment;
 
+    //Constructors
+    public Animal(){
+
+    }
+
+    public Animal(String animalID, String animalName, String animalFamiliy, String animalSpecies, String cageAssignment) {
+        this.animalID = animalID;
+        this.animalName = animalName;
+        this.animalFamiliy = animalFamiliy;
+        this.animalSpecies = animalSpecies;
+        this.cageAssignment = cageAssignment;
+    }
+
+    //Getters and setters
     public String getAnimalID() {
         return animalID;
     }
