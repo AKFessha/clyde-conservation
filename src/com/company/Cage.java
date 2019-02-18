@@ -107,6 +107,54 @@ public void cageSizeMenu(){
     System.out.println("\t4. Extra-Large (16 Animals, 4 Keeper)");
 }
 
+    /*
+     * Assign Animal method
+     * Takes a Cage and Animal object as parameters
+     * Checks if Cage is full
+     * Checks if Animal already exists in Cage
+     * Checks Animal is valid species for Cage type
+     * Adds Animal to Cage, sets Cage type (if "None"),
+     * sets Animal CageAssignment
+     * Prints confirmation to user
+     */
+    public void assignAnimal(Cage cage, Animal animal) {
+
+        if (cage.cagedAnimals.size() >= cage.getMaxAnimal()) {
+            System.err.println("This cage is full");
+        } else if (cage.cagedAnimals.contains(animal)) {
+            System.err.println("This animal is already in this cage");
+        } else if (!Validate.validateCageType(cage, animal)) {
+            System.err.println("This animal can't go in this cage");
+        } else {
+            cage.cagedAnimals.add(animal);
+            if (cage.getCageType().equals("None")) {
+                cage.defineCageType(cage, animal);
+            }
+            animal.setCageAssignment(cage.getCageID());
+            System.out.println(animal.getAnimalName() + " the " + animal.getAnimalSpecies() + " was successfully added to cage " + cage.getCageID());
+        }
+    }
+
+    /*
+     * Define Cage Type method
+     * Takes Cage and Animal object as parameters
+     * Checks if species can share
+     * If they can share, set type to species1 and species2
+     * If not, set type to species
+     */
+    public void defineCageType(Cage cage, Animal animal) {
+        if(animal.getAnimalSpecies().equals("Zebra") || animal.getAnimalSpecies().equals("Marmoset-Monkey")) {
+            cage.setCageType("Zebras and Marmoset Monkeys");
+        } else if(animal.getAnimalSpecies().equals("Rabbit") || animal.getAnimalSpecies().equals("Guinea-Pig")) {
+            cage.setCageType("Rabbits and Guinea Pigs");
+        } else if(animal.getAnimalSpecies().equals("Horse") || animal.getAnimalSpecies().equals("Donkey")) {
+            cage.setCageType("Horses and Donkeys");
+        } else if(animal.getAnimalSpecies().equals("Bearded-Dragon") || animal.getAnimalSpecies().equals("Lizard")) {
+            cage.setCageType("Bearded Dragons and Lizards");
+        } else {
+            cage.setCageType(animal.getAnimalSpecies() + "s");
+        }
+    }
     // Getters and Setters
 
     public String getCageID() {
