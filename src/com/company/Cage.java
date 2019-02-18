@@ -13,7 +13,8 @@ public class Cage {
 
     // Constructors
     public Cage(){
-
+      cagedAnimals= new LinkedList<>();
+      cagedKeepers= new LinkedList<>();
     }
     public Cage(String cageID, String cageSize, String cageType, int maxAnimal, int maxKeepers) {
         this.cageID = cageID;
@@ -22,6 +23,7 @@ public class Cage {
         this.maxAnimal = maxAnimal;
         this.maxKeepers = maxKeepers;
     }
+
 
 
     // Getters and Setters
