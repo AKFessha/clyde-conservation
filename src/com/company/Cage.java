@@ -207,6 +207,30 @@ public void cageSizeMenu(){
         }
     }
 
+    /*
+     * Unassign Keeper method
+     * Takes a Cage and Keeper object as parameters
+     * Checks Cage and Keeper are not null
+     * Loops through Cage's cagedKeepers LinkedList
+     * If param Keeper ID matches a Keeper ID in the list, remove
+     * that Keeper from list
+     * Set the Keeper cageAssignment (where = Cage ID) to "None"
+     * Prints confirmation to user
+     */
+    public void unassignKeeper(Cage cage, Keeper keeper) {
+        if(cage != null && keeper != null) {
+            for(Keeper i : cage.getCagedKeepers()) {
+                if(i.getKeeperId().equals(keeper.getKeeperId())) {
+                    cage.getCagedKeepers().remove(i);
+                    keeper.setCageAssignment("None");
+                    System.out.println(keeper.getFirstName() + " " + keeper.getLastName() + " successfully removed from " + cage.getCageID());
+                }
+            }
+        } else {
+            System.err.println("Unable to assign keeper");
+        }
+    }
+
 
     // Getters and Setters
 
