@@ -155,6 +155,8 @@ public void cageSizeMenu(){
             cage.setCageType(animal.getAnimalSpecies() + "s");
         }
     }
+
+
     // Getters and Setters
 
     public String getCageID() {
