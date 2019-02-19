@@ -8,7 +8,17 @@ public class Enclosure {
     private int numberOfKeepers;
     private LinkedList<Enclosure> enclosedCages;
 
+     //Constructors
+    public Enclosure(){
 
+    }
+
+    public Enclosure(String suitability, int numberOfCages, int numberOfKeepers) {
+        enclosedCages= new LinkedList<>();
+        this.suitability = suitability;
+        this.numberOfCages = numberOfCages;
+        this.numberOfKeepers = numberOfKeepers;
+    }
 
     //Getters and setters
     public String getSuitability() {
