@@ -156,7 +156,29 @@ public void cageSizeMenu(){
         }
     }
 
-
+    /*
+     * Assign Keeper method
+     * Takes a Cage and Keeper object as parameters
+     * Checks if Cage is assigned max Keepers
+     * Checks if Keeper already exists in Cage
+     * Checks if Keeper is assigned max (4) cages
+     * Adds Keeper to Cage, sets Keeper cageAssignment to
+     * Cage ID (for next "None" in cageAssignment ArrayList)
+     * Prints confirmation to user
+     */
+    public void assignKeeper(Cage cage, Keeper keeper) {
+        if(cage.getCagedKeepers().size() >= cage.getMaxKeepers()) {
+            System.err.println("This cage can't be assigned any more keepers");
+        } else if(cage.getCagedKeepers().contains(keeper)) {
+            System.err.println("This keeper is already assigned to this cage");
+        } else if(!keeper.getCageAssignment().contains("None")) {
+            System.err.println("This keeper can't be assigned any more cages");
+        } else {
+            cage.getCagedKeepers().add(keeper);
+            keeper.setCageAssignment(cage.getCageID());
+            System.out.println(keeper.getFirstName() + " " + keeper.getLastName() + " was successfully assigned to cage " + cage.getCageID());
+        }
+    }
     // Getters and Setters
 
     public String getCageID() {
