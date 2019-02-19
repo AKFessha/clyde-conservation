@@ -6,6 +6,18 @@ public class Keeper {
     private String lastName;
     private String cageAssignment;
 
+    //Constructors
+    public Keeper(){
+
+    }
+
+    public Keeper(String keeperId, String firstName, String lastName, String cageAssignment) {
+        this.keeperId = keeperId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.cageAssignment = cageAssignment;
+    }
+
 
     //Getters and setters
 
