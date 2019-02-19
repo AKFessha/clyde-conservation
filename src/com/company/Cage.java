@@ -179,6 +179,35 @@ public void cageSizeMenu(){
             System.out.println(keeper.getFirstName() + " " + keeper.getLastName() + " was successfully assigned to cage " + cage.getCageID());
         }
     }
+    /*
+     * Unassign Animal method
+     * Takes a Cage and Animal object as parameters
+     * Checks Cage and Animal are not null
+     * Loops through Cage's cagedAnimals LinkedList
+     * If param Animal ID matches an Animal ID in the list, remove
+     * that Animal from list
+     * Set the Animal cageAssignment to "None"
+     * Prints confirmation to user
+     * If CagedAnimals List is empty, set cageType to "None"
+     */
+    public void unassignAnimal(Cage cage, Animal animal) {
+        if(cage != null && animal != null) {
+            for(Animal i : cage.getCagedAnimals()) {
+                if(i.getAnimalID().equals(animal.getAnimalID())) {
+                    cage.getCagedAnimals().remove(i);
+                    animal.setCageAssignment("None");
+                    System.out.println(animal.getAnimalName() + " the " + animal.getAnimalSpecies() + " successfully removed from " + cage.getCageID());
+                    if(cage.getCagedAnimals().isEmpty()) {
+                        cage.setCageType("None");
+                    }
+                }
+            }
+        } else {
+            System.err.println("Unable to unassign animal");
+        }
+    }
+
+
     // Getters and Setters
 
     public String getCageID() {
