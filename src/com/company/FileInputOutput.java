@@ -68,4 +68,35 @@ public class FileInputOutput {
         }
     }
 
+
+    /*
+     * Write Cage Details method
+     * Takes ArrayList<Cage> as parameter
+     * Initialise FileWriter with the Cage File
+     * Initlaise PrintWriter with FileWriter
+     * Loop through Cage ArrayList and (if != null)
+     * Write all Cage attributes to Cage File
+     * Flush PrintWriter when complete
+     */
+    public void writeCageDetails(ArrayList<Cage> cageList) {
+        try {
+            write = new FileWriter(cageFile);
+            out = new PrintWriter(write);
+
+            for (Cage i : cageList) {
+                if (cageList != null) {
+                    out.write(i.getCageID() + ",");
+                    out.write(i.getCageSize() + ",");
+                    out.write(i.getCageType() + ",");
+                    out.write(i.getMaxAnimal() + ",");
+                    out.write(i.getMaxKeepers() + "\n");
+                }
+            }
+            out.flush();
+        } catch (IOException e) {
+            System.err.println("Invalid path");
+            e.printStackTrace();
+        }
+    }
+
 }
