@@ -18,7 +18,25 @@ public class Keeper {
         this.cageAssignment = cageAssignment;
     }
 
-
+    /*
+     * New Keeper method
+     * Takes a blank Keeper object as parameter
+     * Prompts user to enter Keeper details
+     * Assigns these inputs to Keeper attributes with
+     * setters
+     * Keeper cageAssignment ArrayList is looped through and
+     * initialised to "None", and ID is automatically generated
+     * Returns Keeper object
+     */
+    public Keeper newKeeper(Keeper keeper) {
+        System.out.println("Please enter Keeper first name: ");
+        keeper.setFirstName(Validate.validateString());
+        System.out.println("Please enter Keeper last name: ");
+        keeper.setLastName(Validate.validateString());
+        keeper.setKeeperId(Validate.idGenerator("KP"));
+        keeper.setCageAssignment("None");
+        return keeper;
+    }
     //Getters and setters
 
     public String getKeeperId() {
