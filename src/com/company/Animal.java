@@ -3,7 +3,7 @@ package com.company;
 public class Animal {
     private String animalID;
     private String animalName;
-    private String animalFamiliy;
+    private String animalFamily;
     private String animalSpecies;
     private String cageAssignment;
 
@@ -12,13 +12,177 @@ public class Animal {
 
     }
 
-    public Animal(String animalID, String animalName, String animalFamiliy, String animalSpecies, String cageAssignment) {
+    public Animal(String animalID, String animalName, String animalFamily, String animalSpecies, String cageAssignment) {
         this.animalID = animalID;
         this.animalName = animalName;
-        this.animalFamiliy = animalFamiliy;
+        this.animalFamily = animalFamily;
         this.animalSpecies = animalSpecies;
         this.cageAssignment = cageAssignment;
     }
+    /*
+     * New Animal method
+     * Takes a blank Animal object as parameter
+     * Prompts user to enter Animal details
+     * Assigns these inputs to Animal attributes with
+     * setters
+     * Animal Family and Species are defined with switch menus
+     * below, and ID is automatically generated
+     * Returns Animal object
+     */
+    public Animal newAnimal(Animal animal) {
+        System.out.println("Please enter Animal name: ");
+        animal.setAnimalName(Validate.sc.nextLine());
+        System.out.println("Please enter Animal family: ");
+        animal.setAnimalFamily(animalFamilySelector());
+        System.out.println("Please enter Animal species: ");
+        animal.setAnimalSpecies(animalSpeciesSelector(animal.getAnimalFamily()));
+        animal.setAnimalID(Validate.idGenerator(animal.getAnimalSpecies().substring(0, 2).toUpperCase()));
+        animal.setCageAssignment("None");
+        return animal;
+    }
+
+
+    /*
+     * Animal Family Selector method
+     * Switch menu to setAnimalFamily() above
+     * returns family
+     */
+    public String animalFamilySelector() {
+        int choice;
+        String family = "";
+        System.out.println("\t1. Mammal");
+        System.out.println("\t2. Bird");
+        System.out.println("\t3. Reptile");
+        choice = Validate.validateInteger();
+        try {
+            if(choice == 1) {
+                family = "Mammal";
+            } else if(choice == 2) {
+                family = "Bird";
+            } else if(choice == 3) {
+                family = "Reptile";
+            } else {
+                Validate.errorMessage("selection");
+                animalFamilySelector();
+            }
+        } catch(NumberFormatException e) {
+            Validate.errorMessage("input");
+        }
+        return family;
+    }
+
+    /*
+     * Animal Species Selector method
+     * Takes String family as parameter which determines
+     * which switch runs
+     * sets species based on user input
+     * Returns species
+     */
+    public String animalSpeciesSelector(String family) {
+        int choice;
+        String type = "";
+        if(family.equals("Mammal")) {
+            System.out.println("\t1. Ape");
+            System.out.println("\t2. Donkey");
+            System.out.println("\t3. Guinea-Pig");
+            System.out.println("\t4. Horse");
+            System.out.println("\t5. Marmoset-Monkey");
+            System.out.println("\t6. Rabbit");
+            System.out.println("\t7. Tiger");
+            System.out.println("\t8. Zebra");
+            choice = Validate.validateInteger();
+            try {
+                switch(choice) {
+                    case 1:
+                        type = "Ape";
+                        break;
+                    case 2:
+                        type = "Donkey";
+                        break;
+                    case 3:
+                        type = "Guinea-Pig";
+                        break;
+                    case 4:
+                        type = "Horse";
+                        break;
+                    case 5:
+                        type = "Marmoset-Monkey";
+                        break;
+                    case 6:
+                        type = "Rabbit";
+                        break;
+                    case 7:
+                        type = "Tiger";
+                        break;
+                    case 8:
+                        type = "Zebra";
+                        break;
+                    default:
+                        Validate.errorMessage("selection");
+                        choice = Validate.validateInteger();
+                }
+            } catch(NumberFormatException e) {
+                Validate.errorMessage("input");
+            }
+            return type;
+
+        } else if (family.equals("Bird")) {
+            System.out.println("\t1. Emu");
+            System.out.println("\t2. Owl");
+            System.out.println("\t3. Penguin");
+            System.out.println("\t4. Vulture");
+            choice = Validate.validateInteger();
+            try {
+                switch(choice) {
+                    case 1:
+                        type = "Emu";
+                        break;
+                    case 2:
+                        type = "Owl";
+                        break;
+                    case 3:
+                        type = "Penguin";
+                        break;
+                    case 4:
+                        type = "Vulture";
+                        break;
+                    default:
+                        Validate.errorMessage("selection");
+                        choice = Validate.validateInteger();
+                }
+            } catch(NumberFormatException e) {
+                Validate.errorMessage("input");
+            }
+            return type;
+
+        } else {
+            System.out.println("\t1. Bearded-Dragon");
+            System.out.println("\t2. Chameleon");
+            System.out.println("\t3. Lizard");
+            choice = Validate.validateInteger();
+            try {
+                switch(choice) {
+                    case 1:
+                        type = "Bearded-Dragon";
+                        break;
+                    case 2:
+                        type = "Chameleon";
+                        break;
+                    case 3:
+                        type = "Lizard";
+                        break;
+                    default:
+                        Validate.errorMessage("selection");
+                        choice = Validate.validateInteger();
+                }
+            } catch(NumberFormatException e) {
+                Validate.errorMessage("input");
+            }
+            return type;
+        }
+    }
+
+
 
     //Getters and setters
     public String getAnimalID() {
@@ -37,12 +201,12 @@ public class Animal {
         this.animalName = animalName;
     }
 
-    public String getAnimalFamiliy() {
-        return animalFamiliy;
+    public String getAnimalFamily() {
+        return animalFamily;
     }
 
-    public void setAnimalFamiliy(String animalFamiliy) {
-        this.animalFamiliy = animalFamiliy;
+    public void setAnimalFamily(String animalFamily) {
+        this.animalFamily = animalFamily;
     }
 
     public String getAnimalSpecies() {
