@@ -120,6 +120,21 @@ public class Collection {
     }
 
     /*
+     * Add new Cage method
+     * Creates a new Cage object and passes it to the newCage() method in
+     * Cage class for setup
+     * Adds new Cage to allCages ArrayList
+     * Prints new Cage details
+     */
+    public void addCage() {
+        Cage cage = new Cage();
+        cage = cage.newCage(cage);
+        allCages.add(cage);
+        System.out.println("Cage successfully added");
+        displayCageDetails(cage);
+    }
+
+    /*
      * Display all cages method
      * Loops through allCages ArrayList
      * and passes each Cage object to displayCageDetails()
