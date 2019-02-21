@@ -32,6 +32,20 @@ public class Collection {
         allKeepers= new ArrayList<>();
         allEnclosures= new ArrayList<>();
         data = new FileInputOutput();
+        readData();
+    }
+
+
+    /*
+     * Save Data method
+     * Passes each ArrayList to their respective
+     * write details method in FileInputOutput class
+     */
+    public void saveData() {
+        data.writeAnimaDetails(allAnimals);
+        data.writeKeeperDetails(allKeepers);
+        data.writeCageDetails(allCages);
+
     }
 
     /*
