@@ -64,6 +64,32 @@ public class Collection {
         System.out.println("\n");
     }
 
+    /*
+     * Display Cage Details method
+     * Takes a Cage object as parameter
+     * Prints all details for that Cage
+     * Formatted for readability
+     */
+    public void displayCageDetails(Cage cage) {
+        System.out.println("Cage ID: " + cage.getCageID());
+        System.out.println("Cage Size: " + cage.getCageSize());
+        System.out.println("Cage Type: " + cage.getCageType());
+        System.out.println("Cage Animal Capacity: " + cage.getMaxAnimal());
+        System.out.println("Cage Keeper Capacity: " + cage.getMaxKeepers() + "\n");
+        System.out.println("Animals: ");
+
+        for(Animal i : cage.getCagedAnimals()) {
+
+            System.out.println("\t" + i.getAnimalName() + " the " + i.getAnimalSpecies());
+        }
+        System.out.println("\nKeepers:");
+        for(Keeper i : cage.getCagedKeepers()) {
+            System.out.println("\t" + i.getFirstName() + " " + i.getLastName());
+        }
+        System.out.println("\n");
+
+    }
+
 
 
     /*
