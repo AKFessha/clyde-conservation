@@ -104,6 +104,22 @@ public class Collection {
     }
 
     /*
+     * Keeper search method
+     * Finds Keeper object based on ID entered in ID search method
+     * Returns Keeper object
+     */
+    public Keeper searchKeeper() {
+        String id = searchId("Keeper");
+        Keeper thisKeeper = null;
+        for(Keeper i : allKeepers) {
+            if(id.equals(i.getKeeperId())) {
+                thisKeeper = i;
+            }
+        }
+        return thisKeeper;
+    }
+
+    /*
      * Display all cages method
      * Loops through allCages ArrayList
      * and passes each Cage object to displayCageDetails()

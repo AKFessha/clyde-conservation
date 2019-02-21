@@ -18,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/Collection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="394">
-              <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+              <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1031#1032#0" expanded="true" />
@@ -116,7 +116,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550710864420" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550710939335" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ClydeConservationFinal" />
   </component>
   <component name="RunDashboard">
@@ -155,12 +155,12 @@
       <updated>1550100577380</updated>
       <workItem from="1550100580661" duration="1897000" />
       <workItem from="1550445056271" duration="1747000" />
-      <workItem from="1550531604964" duration="16477000" />
+      <workItem from="1550531604964" duration="16544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20121000" />
+    <option name="totallyTimeSpent" value="20188000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -351,7 +351,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/Collection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
-          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1031#1032#0" expanded="true" />
