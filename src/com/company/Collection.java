@@ -61,6 +61,22 @@ public class Collection {
     }
 
     /*
+     * Animal search method
+     * Finds Animal object based on ID entered in ID search method
+     * Returns Animal object
+     */
+    public Animal searchAnimal() {
+        String id = searchId("Animal");
+        Animal thisAnimal = null;
+        for(Animal i : allAnimals) {
+            if(id.equals(i.getAnimalID())) {
+                thisAnimal = i;
+            }
+        }
+        return thisAnimal;
+    }
+
+    /*
      * Display all Keepers method
      * Loops through allKeepers ArrayList
      * and passes each Keeper object to displayKeeperDetails()
