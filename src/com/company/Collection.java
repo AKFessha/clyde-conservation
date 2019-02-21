@@ -88,6 +88,18 @@ public class Collection {
     }
 
     /*
+     * Display all cages method
+     * Loops through allCages ArrayList
+     * and passes each Cage object to displayCageDetails()
+     * method below for printing
+     */
+    public void displayAllCages() {
+        for(Cage i : allCages) {
+            displayCageDetails(i);
+        }
+    }
+
+    /*
      * Display Cage Details method
      * Takes a Cage object as parameter
      * Prints all details for that Cage
