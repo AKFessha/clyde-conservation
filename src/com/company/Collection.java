@@ -49,6 +49,22 @@ public class Collection {
         System.out.println("Cage: " + animal.getCageAssignment() + "\n");
     }
 
+    /*
+     * Display Keeper Details method
+     * Takes a Keeper object as parameter
+     * Prints all details for that Keeper
+     * Formatted for readability
+     */
+    public void displayKeeperDetails(Keeper keeper) {
+        System.out.println("Keeper ID: " + keeper.getKeeperId());
+        System.out.println("Keeper First Name: " + keeper.getFirstName());
+        System.out.println("Keeper Last Name: " + keeper.getLastName());
+        System.out.println("Cage Assignment " + keeper.getCageAssignment());
+
+        System.out.println("\n");
+    }
+
+
 
     /*
      * Search ID method
