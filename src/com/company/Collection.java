@@ -125,6 +125,18 @@ public class Collection {
 
     }
 
+    /*
+     * Display all Enclosures method
+     * Loops through allEnclosures ArrayList
+     * and passes each Enclosure object to displayEnclosureDetails()
+     * method below for printing
+     */
+    public void displayAllEnclosures(){
+        for (Enclosure i: allEnclosures){
+            displayEnclosureDetails(i);
+        }
+    }
+
 
     /*
      * Display Enclosure Details method
