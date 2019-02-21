@@ -126,6 +126,22 @@ public class Collection {
     }
 
     /*
+     * Cage search method
+     * Finds Cage object based on ID entered in ID search method
+     * Returns Cage object
+     */
+    public Cage searchCage() {
+        String id = searchId("Cage");
+        Cage thisCage = null;
+        for(Cage i : allCages) {
+            if(id.equals(i.getCageID())) {
+                thisCage = i;
+            }
+        }
+        return thisCage;
+    }
+
+    /*
      * Display all Enclosures method
      * Loops through allEnclosures ArrayList
      * and passes each Enclosure object to displayEnclosureDetails()
