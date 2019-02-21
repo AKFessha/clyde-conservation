@@ -60,6 +60,17 @@ public class Collection {
         System.out.println("Cage: " + animal.getCageAssignment() + "\n");
     }
 
+    /*
+     * Display all Keepers method
+     * Loops through allKeepers ArrayList
+     * and passes each Keeper object to displayKeeperDetails()
+     * method below for printing
+     */
+    public void displayAllKeepers() {
+        for(Keeper i : allKeepers) {
+            displayKeeperDetails(i);
+        }
+    }
 
     /*
      * Display Keeper Details method
