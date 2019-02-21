@@ -93,6 +93,22 @@ public class Collection {
     }
 
     /*
+     * Add new Keeper method
+     * Creates a new Keeper object and passes it to the newKeeper() method in
+     * Keeper class for setup
+     * Adds new Keeper to allKeepers ArrayList
+     * Prints new Keeper details
+     */
+    public void addKeeper() {
+        Keeper keeper = new Keeper();
+        keeper = keeper.newKeeper(keeper);
+        allKeepers.add(keeper);
+        System.out.println("Keeper successfully added");
+        displayKeeperDetails(keeper);
+    }
+
+
+    /*
      * Display all Keepers method
      * Loops through allKeepers ArrayList
      * and passes each Keeper object to displayKeeperDetails()
