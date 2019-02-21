@@ -99,4 +99,35 @@ public class FileInputOutput {
         }
     }
 
+    /*
+     * Write Keeper Details method
+     * Takes ArrayList<Keeper> as parameter
+     * Initialise FileWriter with the Keeper File
+     * Initlaise PrintWriter with FileWriter
+     * Loop through Keeper ArrayList and (if != null)
+     * Write all Keeper attributes to Keeper File
+     * Another loop is needed to write CageAssignments
+     * Flush PrintWriter when complete
+     */
+    public void writeKeeperDetails(ArrayList<Keeper> keeperList) {
+        try {
+            write = new FileWriter(keeperFile);
+            out = new PrintWriter(write);
+
+            for(Keeper i : keeperList) {
+                if(keeperList != null) {
+                    out.write(i.getKeeperId() + ",");
+                    out.write(i.getFirstName() + ",");
+                    out.write(i.getLastName() + ",");
+                    out.write(i.getCageAssignment()+"\n");
+                }
+            }
+            out.flush();
+        } catch(IOException e) {
+            System.err.println("Invalid path");
+            e.printStackTrace();
+        }
+    }
+
+
 }
