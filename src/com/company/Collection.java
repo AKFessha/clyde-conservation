@@ -35,6 +35,7 @@ public class Collection {
         readData();
     }
 
+
     /*
      * Display Animal Details method
      * Takes a Animal object as parameter
@@ -86,6 +87,21 @@ public class Collection {
         for(Keeper i : cage.getCagedKeepers()) {
             System.out.println("\t" + i.getFirstName() + " " + i.getLastName());
         }
+        System.out.println("\n");
+
+    }
+
+
+    /*
+     * Display Enclosure Details method
+     * Takes a Enclosure object as parameter
+     * Prints all details for that Enclosure
+     * Formatted for readability
+     */
+    public void displayEnclosureDetails(Enclosure enclosure) {
+        System.out.println("Suitability: " + enclosure.getSuitability() );
+        System.out.println("Number of Cages: " + enclosure.getNumberOfCages());
+        System.out.println("Number of keepers " + enclosure.getNumberOfKeepers());
         System.out.println("\n");
 
     }
