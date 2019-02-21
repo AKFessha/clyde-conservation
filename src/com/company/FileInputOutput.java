@@ -129,5 +129,38 @@ public class FileInputOutput {
         }
     }
 
+    /*
+     * Read Animal Data method
+     * Takes ArrayList<Animal> as parameter
+     * Initialise FileReader with Animal File
+     * Initialise Scanner with FileReader
+     * Create new Animal Object
+     * Read through Animal File and Scan each line
+     * Set Animal attributes to these inputs
+     * Add Animal to Animal ArrayList
+     */
+    public void readAnimalData(ArrayList<Animal> animalList) throws IOException {
+
+        BufferedReader in =Validate.checkFile(pathToAnimalFile); //check if the file exists
+        String str;
+        while ((str = in.readLine()) != null) {
+            animalList.add(populateAnimalDetails(str));
+        }
+        in.close();
+    }
+
+    private static Animal populateAnimalDetails(String str) {
+        String[] data;
+        if (str == null) {
+            return null;
+        } else {
+            //the content, str.split(",") returns an array[] of strings separated by a tab
+            data = str.split(",");
+            return new Animal(data[0], data[1], data[2], data[3], data[4]);
+        }
+    }
+
+
+
 
 }
