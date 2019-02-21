@@ -33,4 +33,38 @@ public class Collection {
         allEnclosures= new ArrayList<>();
         data = new FileInputOutput();
     }
+
+    //Getters and setters
+
+    public ArrayList<Cage> getAllCages() {
+        return allCages;
+    }
+
+    public void setAllCages(ArrayList<Cage> allCages) {
+        this.allCages = allCages;
+    }
+
+    public ArrayList<Animal> getAllAnimals() {
+        return allAnimals;
+    }
+
+    public void setAllAnimals(ArrayList<Animal> allAnimals) {
+        this.allAnimals = allAnimals;
+    }
+
+    public ArrayList<Keeper> getAllKeepers() {
+        return allKeepers;
+    }
+
+    public void setAllKeepers(ArrayList<Keeper> allKeepers) {
+        this.allKeepers = allKeepers;
+    }
+
+    public ArrayList<Enclosure> getAllEnclosures() {
+        return allEnclosures;
+    }
+
+    public void setAllEnclosures(ArrayList<Enclosure> allEnclosures) {
+        this.allEnclosures = allEnclosures;
+    }
 }
