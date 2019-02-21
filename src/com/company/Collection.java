@@ -35,6 +35,19 @@ public class Collection {
         readData();
     }
 
+    /*
+     * Display Animal Details method
+     * Takes a Animal object as parameter
+     * Prints all details for that Animal
+     * Formatted for readability
+     */
+    public void displayAnimalDetails(Animal animal) {
+        System.out.println("Animal ID: " + animal.getAnimalID());
+        System.out.println("Animal Name: " + animal.getAnimalName());
+        System.out.println("Animal Family: " + animal.getAnimalFamily());
+        System.out.println("Animal Species: " + animal.getAnimalSpecies());
+        System.out.println("Cage: " + animal.getCageAssignment() + "\n");
+    }
 
 
     /*
