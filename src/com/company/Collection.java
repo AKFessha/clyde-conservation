@@ -35,7 +35,17 @@ public class Collection {
         readData();
     }
 
-
+    /*
+     * Display all Animals method
+     * Loops through allAnimals ArrayList
+     * and passes each Animal object to displayAnimalDetails()
+     * method below for printing
+     */
+    public void displayAllAnimals() {
+        for(Animal i : allAnimals) {
+            displayAnimalDetails(i);
+        }
+    }
     /*
      * Display Animal Details method
      * Takes a Animal object as parameter
@@ -49,6 +59,7 @@ public class Collection {
         System.out.println("Animal Species: " + animal.getAnimalSpecies());
         System.out.println("Cage: " + animal.getCageAssignment() + "\n");
     }
+
 
     /*
      * Display Keeper Details method
