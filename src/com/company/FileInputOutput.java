@@ -160,7 +160,37 @@ public class FileInputOutput {
         }
     }
 
+    /*
+     * Read Cage Data method
+     * Takes ArrayList<Cage> as parameter
+     * Initialise FileReader with Cage File
+     * Initialise Scanner with FileReader
+     * Create new Cage Object
+     * Read through Cage File and Scan each line
+     * Set Cage attributes to these inputs separated by comma using pouplateCageDetails and
+     * Add Cage to Cage ArrayList
+     */
+    public void readCageData(ArrayList<Cage> cageList) throws IOException {
+        BufferedReader in =Validate.checkFile(pathToCageFile); //check if the file exists
+        String str;
+        while ((str = in.readLine()) != null) {
+            cageList.add(populateCageDetails(str));
+        }
+        in.close();
 
+    }
+
+    //Populate a Cage from a String passed by using the split method and return the Cage
+    private static Cage populateCageDetails(String str) {
+        String[] data;
+        if (str == null) {
+            return null;
+        } else {
+            //the content, str.split(",") returns an array[] of strings separated by a tab
+            data = str.split(",");
+            return new Cage(data[0], data[1], data[2], Integer.parseInt(data[3]), Integer.parseInt(data[4]));
+        }
+    }
 
 
 }
