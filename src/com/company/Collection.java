@@ -36,6 +36,20 @@ public class Collection {
     }
 
 
+
+    /*
+     * Search ID method
+     * Takes in String of type as parameter
+     * type defines what type of ID is being searched for
+     * Variable id reads user input
+     * returns id
+     */
+    public String searchId(String type) {
+        System.out.println("Please enter " + type + " ID: ");
+        String id = Validate.sc.nextLine();
+        return id;
+    }
+
     /*
      * Save Data method
      * Passes each ArrayList to their respective
