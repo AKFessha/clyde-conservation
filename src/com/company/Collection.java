@@ -35,6 +35,22 @@ public class Collection {
         readData();
     }
 
+
+    /*
+     * Add new Animal method
+     * Creates a new Animal object and passes it to the newAnimal() method in
+     * Animal class for setup
+     * Adds new Animal to allAnimals ArrayList
+     * Prints new Animal details
+     */
+    public void addAnimal() {
+        Animal animal = new Animal();
+        animal = animal.newAnimal(animal);
+        allAnimals.add(animal);
+        System.out.println("Animal successfully added");
+        displayAnimalDetails(animal);
+    }
+
     /*
      * Display all Animals method
      * Loops through allAnimals ArrayList
