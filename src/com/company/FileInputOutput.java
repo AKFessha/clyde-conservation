@@ -195,10 +195,10 @@ public class FileInputOutput {
     /*
      * Read Keeper Data method
      * Takes ArrayList<Keeper> as parameter
-     * Initialise FileReader with Cage File
+     * Initialise FileReader with Keeper File
      * Initialise Scanner with FileReader
      * Create new Keeper Object
-     * Read through Cage File and Scan each line
+     * Read through keeper File and Scan each line
      * Set Keeper attributes to these inputs separated by comma using pouplateKeeperDetails and
      * Add keeper to keeper ArrayList
      */
@@ -222,6 +222,39 @@ public class FileInputOutput {
             //the content, str.split(",") returns an array[] of strings separated by a tab
             data = str.split(",");
             return new Keeper(data[0], data[1], data[2], data[3]);
+        }
+    }
+
+    /*
+     * Read Enclosure Data method
+     * Takes ArrayList<Cage> as parameter
+     * Initialise FileReader with Enclosure File
+     * Initialise Scanner with FileReader
+     * Create new Enclosure Object
+     * Read through Enclosure File and Scan each line
+     * Set enclosure attributes to these inputs separated by comma using pouplateEnclosureDetails and
+     * Add enclosure to Enclosure ArrayList
+     */
+    public void readEnclosureData(ArrayList<Enclosure> enclosureList) throws IOException {
+        BufferedReader in =Validate.checkFile(pathToEnclosureFile); //check if the file exists
+        String str;
+        while ((str = in.readLine()) != null) {
+            enclosureList.add(populateEnclosureDetails(str));
+        }
+        in.close();
+
+    }
+
+//Populate an enclosure from a String passed by using the split method and return the enclosure
+
+    private static Enclosure populateEnclosureDetails(String str) {
+        String[] data;
+        if (str == null) {
+            return null;
+        } else {
+            //the content, str.split(",") returns an array[] of strings separated by a tab
+            data = str.split(",");
+            return new Enclosure(data[0], Integer.parseInt(data[1]), Integer.parseInt(data[2]));
         }
     }
 
