@@ -192,5 +192,39 @@ public class FileInputOutput {
         }
     }
 
+    /*
+     * Read Keeper Data method
+     * Takes ArrayList<Keeper> as parameter
+     * Initialise FileReader with Cage File
+     * Initialise Scanner with FileReader
+     * Create new Keeper Object
+     * Read through Cage File and Scan each line
+     * Set Keeper attributes to these inputs separated by comma using pouplateKeeperDetails and
+     * Add keeper to keeper ArrayList
+     */
+    public void readKeeperData(ArrayList<Keeper> keeperList) throws IOException {
+        BufferedReader in =Validate.checkFile(pathToKeeperFile); //check if the file exists
+        String str;
+        while ((str = in.readLine()) != null) {
+            keeperList.add(populateKeeperDetails(str));
+        }
+        in.close();
+
+    }
+
+    //Populate a keeper from a String passed by using the split method and return the keeper
+
+    private static Keeper populateKeeperDetails(String str) {
+        String[] data;
+        if (str == null) {
+            return null;
+        } else {
+            //the content, str.split(",") returns an array[] of strings separated by a tab
+            data = str.split(",");
+            return new Keeper(data[0], data[1], data[2], data[3]);
+        }
+    }
+
+
 
 }
