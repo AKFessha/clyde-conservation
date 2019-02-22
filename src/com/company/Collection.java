@@ -113,6 +113,17 @@ public class Collection {
     }
 
     /*
+     * Remove Animal method
+     * Obtains Animal and Cage objects from search method above
+     * Passes both objects to the unassignAnimal() method in Cage class
+     */
+    public void removeAnimal() {
+        Animal animal = searchAnimal();
+        Cage cage = searchCage();
+        cage.unassignAnimal(cage, animal);
+    }
+
+    /*
      * Add new Keeper method
      * Creates a new Keeper object and passes it to the newKeeper() method in
      * Keeper class for setup

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="934d56bc-d419-4126-95f4-a5745312cbd3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Collection.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,18 +17,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Collection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="192" column="4" selection-start-line="192" selection-start-column="4" selection-end-line="192" selection-end-column="4" />
+            <state relative-caret-position="377">
+              <caret line="123" column="5" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10506#10507#0" expanded="true" />
-                <element signature="e#10603#10604#0" expanded="true" />
-                <element signature="e#10684#10685#0" expanded="true" />
-                <element signature="e#10791#10792#0" expanded="true" />
-                <element signature="e#10872#10873#0" expanded="true" />
-                <element signature="e#10979#10980#0" expanded="true" />
-                <element signature="e#11069#11070#0" expanded="true" />
-                <element signature="e#11191#11192#0" expanded="true" />
+                <element signature="e#10838#10839#0" expanded="true" />
+                <element signature="e#10935#10936#0" expanded="true" />
+                <element signature="e#11016#11017#0" expanded="true" />
+                <element signature="e#11123#11124#0" expanded="true" />
+                <element signature="e#11204#11205#0" expanded="true" />
+                <element signature="e#11311#11312#0" expanded="true" />
+                <element signature="e#11401#11402#0" expanded="true" />
+                <element signature="e#11523#11524#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,7 +103,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550859549653" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550859799841" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ClydeConservationFinal" />
   </component>
   <component name="RunDashboard">
@@ -141,12 +142,12 @@
       <updated>1550100577380</updated>
       <workItem from="1550100580661" duration="1897000" />
       <workItem from="1550445056271" duration="1747000" />
-      <workItem from="1550531604964" duration="18952000" />
+      <workItem from="1550531604964" duration="19204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22596000" />
+    <option name="totallyTimeSpent" value="22848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -336,18 +337,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Collection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="192" column="4" selection-start-line="192" selection-start-column="4" selection-end-line="192" selection-end-column="4" />
+        <state relative-caret-position="377">
+          <caret line="123" column="5" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10506#10507#0" expanded="true" />
-            <element signature="e#10603#10604#0" expanded="true" />
-            <element signature="e#10684#10685#0" expanded="true" />
-            <element signature="e#10791#10792#0" expanded="true" />
-            <element signature="e#10872#10873#0" expanded="true" />
-            <element signature="e#10979#10980#0" expanded="true" />
-            <element signature="e#11069#11070#0" expanded="true" />
-            <element signature="e#11191#11192#0" expanded="true" />
+            <element signature="e#10838#10839#0" expanded="true" />
+            <element signature="e#10935#10936#0" expanded="true" />
+            <element signature="e#11016#11017#0" expanded="true" />
+            <element signature="e#11123#11124#0" expanded="true" />
+            <element signature="e#11204#11205#0" expanded="true" />
+            <element signature="e#11311#11312#0" expanded="true" />
+            <element signature="e#11401#11402#0" expanded="true" />
+            <element signature="e#11523#11524#0" expanded="true" />
           </folding>
         </state>
       </provider>
