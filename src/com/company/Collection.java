@@ -203,6 +203,16 @@ public class Collection {
     }
 
     /*
+     * Remove Keeper method
+     * Obtains Keeper and Cage objects from search method above
+     * Passes both objects to the unassignKeeper() method in Cage class
+     */
+    public void removeKeeper() {
+        Keeper keeper = searchKeeper();
+        Cage cage = searchCage();
+        cage.unassignKeeper(cage, keeper);
+    }
+    /*
      * Add new Cage method
      * Creates a new Cage object and passes it to the newCage() method in
      * Cage class for setup
