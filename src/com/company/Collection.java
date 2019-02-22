@@ -93,6 +93,26 @@ public class Collection {
     }
 
     /*
+     * Assign Animal to Cage method
+     * Obtains an Animal and Cage object from the search methods above
+     * Checks neither are null
+     * Passes both objects to assignAnimal() method in Cage class
+     */
+    public void assignAnimalCage() {
+        Animal animal = searchAnimal();
+        Cage cage = searchCage();
+        if(animal == null) {
+            Validate.errorMessage("Animal ID");
+            assignAnimalCage();
+        } else if(cage == null) {
+            Validate.errorMessage("Cage ID");
+            assignAnimalCage();
+        } else {
+            cage.assignAnimal(cage, animal);
+        }
+    }
+
+    /*
      * Add new Keeper method
      * Creates a new Keeper object and passes it to the newKeeper() method in
      * Keeper class for setup
