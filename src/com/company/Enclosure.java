@@ -6,7 +6,7 @@ public class Enclosure {
     private String suitability;
     private int numberOfCages;
     private int numberOfKeepers;
-    private LinkedList<Enclosure> enclosedCages;
+    private LinkedList<Cage> enclosedCages;
 
      //Constructors
     public Enclosure(){
@@ -45,11 +45,11 @@ public class Enclosure {
         this.numberOfKeepers = numberOfKeepers;
     }
 
-    public LinkedList<Enclosure> getEnclosedCages() {
+    public LinkedList<Cage> getEnclosedCages() {
         return enclosedCages;
     }
 
-    public void setEnclosedCages(LinkedList<Enclosure> enclosedCages) {
+    public void setEnclosedCages(LinkedList<Cage> enclosedCages) {
         this.enclosedCages = enclosedCages;
     }
 }

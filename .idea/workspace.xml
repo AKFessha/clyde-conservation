@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="934d56bc-d419-4126-95f4-a5745312cbd3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Collection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Enclosure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Enclosure.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Collection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="394">
@@ -30,6 +30,15 @@
                 <element signature="e#11736#11737#0" expanded="true" />
                 <element signature="e#11858#11859#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Enclosure.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="54" column="1" lean-forward="true" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -55,11 +64,11 @@
         <option value="$PROJECT_DIR$/src/com/company/Mammal.java" />
         <option value="$PROJECT_DIR$/src/com/company/Validate.java" />
         <option value="$PROJECT_DIR$/src/com/company/Cage.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Enclosure.java" />
         <option value="$PROJECT_DIR$/src/com/company/Animal.java" />
         <option value="$PROJECT_DIR$/src/com/company/Keeper.java" />
         <option value="$PROJECT_DIR$/src/com/company/FileInputOutput.java" />
         <option value="$PROJECT_DIR$/src/com/company/Collection.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Enclosure.java" />
       </list>
     </option>
   </component>
@@ -103,7 +112,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550859842456" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550972693854" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ClydeConservationFinal" />
   </component>
   <component name="RunDashboard">
@@ -142,18 +151,18 @@
       <updated>1550100577380</updated>
       <workItem from="1550100580661" duration="1897000" />
       <workItem from="1550445056271" duration="1747000" />
-      <workItem from="1550531604964" duration="19247000" />
+      <workItem from="1550531604964" duration="20499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22891000" />
+    <option name="totallyTimeSpent" value="24143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1261745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1261745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -170,7 +179,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32577905" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32577905" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -262,31 +271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Enclosure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#974#975#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -350,6 +334,13 @@
             <element signature="e#11736#11737#0" expanded="true" />
             <element signature="e#11858#11859#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Enclosure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="54" column="1" lean-forward="true" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
         </state>
       </provider>
     </entry>
